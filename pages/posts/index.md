@@ -1,6 +1,6 @@
 ---
 type: posts
-title: Tips
+title: Posts
 date: 2021-03-18
 ---
 

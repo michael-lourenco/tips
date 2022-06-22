@@ -11,7 +11,7 @@ import Image from 'next/image'
 
 <Image
   src="/images/SPT-TERNARIO.png"
-  alt="Photo"
+  alt="Image that shows you about ternary syntax"
   width={1280}
   height={1120}
   priority
@@ -27,3 +27,19 @@ Ele funciona da seguinte forma:
   - condição ? retorno se for verdadeiro : retorno se for falso
 ```
 Usando esta simples e poderosa dica, simplificamos nosso código. 
+
+```
+const number = 5; 
+
+// Instead this
+let result;
+if(number > 4) {
+  result = "Bigger";
+} else {
+  result = "Smaller";
+}
+
+// Use this
+const result = number > 4 ? "Bigger" : "Smaller";
+
+```

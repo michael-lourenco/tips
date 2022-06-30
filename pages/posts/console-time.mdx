@@ -1,0 +1,46 @@
+---
+title: Console Time
+date: 2022/06/17
+description: Console time mostra quanto tempo leva uma operação 
+tag: javascript
+author: Michael Lourenço
+---
+
+# Console Time
+import Image from 'next/image'
+
+<Image
+  src="/images/SPT-CONSOLE-TIME.png"
+  alt="Imagem exemplifica o Console time"
+  width={1278}
+  height={988}
+  priority
+  className="next-image"
+/>
+Já precisou verificar quando um trecho de código é mais performático que outro? 
+
+Em JS, uma das formas simples que utilizo para fazer testes, é o **console.time()**.
+
+O método **console.time()** inicia um cronômetro que você pode usar para verificar quanto tempo uma operação leva. 
+
+Para isso você pode dar a cada cronômetro um nome exclusivo, e pode ter até 10.000 em execução em uma determinada página.
+
+Para determinar o ponto de fim da verificação, utilize o **console.timeEnd()** com o mesmo nome exclusivo.
+
+O terminal/navegador exibirá o tempo, em milissegundos, que passou desde quando o cronômetro foi iniciado.
+
+Referências:
+
+[Mozilla](https://mzl.la/3b9tUQH)
+
+[W3Schools](https://bit.ly/3MUL1TD)
+
+Exemplo:
+
+```
+console.time("mylabel");
+for (let i = 0; i < 100000; i++) {
+  // some code
+}
+console.timeEnd("mylabel");
+```

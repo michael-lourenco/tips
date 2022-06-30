@@ -1,0 +1,46 @@
+---
+title: Divisão por zero
+date: 2022/06/18
+description: Veja armadilhas da divisão por zero
+tag: javascript
+author: Michael Lourenço
+---
+
+# Divisão por zero
+import Image from 'next/image'
+
+<Image
+  src="/images/SPT-DIVISAO-ZERO.png"
+  alt="Image shows tricks of zero division"
+  width={1278}
+  height={856}
+  priority
+  className="next-image"
+/>
+Vou compartilhar com você uma informação interessante que eu não sabia.
+
+Divisão por zero não é um erro em JavaScript: ele simplesmente retorna **"Infinity”**.
+
+No entanto, há uma exceção: zero dividido por zero não tem um valor bem definido e o resultado dessa operação é o valor especial não numérico **NaN**.
+
+Você sabia?
+
+Referências:
+
+[Nomar](https://bit.ly/3AfQfqr)
+
+[Curso Alura - JavaScript: tipos, variáveis e funções (Módulo 1 - Aula 5)](https://bit.ly/39u1IaR)
+
+Exemplo:
+
+```
+// first example
+const a = 10
+const b = 0
+console.log(a/b) // Infinity
+
+// second example
+const a = 0
+const b = 0
+console.log(a/b) // NaN
+```

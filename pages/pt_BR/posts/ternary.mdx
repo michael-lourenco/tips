@@ -1,0 +1,45 @@
+---
+title: Ternário
+date: 2022/06/14
+description: Veja exemplos de como utilizar o ternário
+tag: javascript
+author: Michael Lourenço
+---
+
+# Ternário
+import Image from 'next/image'
+
+<Image
+  src="/images/SPT-TERNARIO.png"
+  alt="Imagem que mostra exemplos de como utilizar o ternário"
+  width={1280}
+  height={1120}
+  priority
+  className="next-image"
+/>
+Muitas vezes a verificação que precisamos realizar é tão simples que retorna um valor para apenas duas possibilidades, você já precisou disso também? Eu uso frequentemente.
+
+Nesse caso o Operador condicional (ternário) reduz linhas de código, substituindo o "if...else"!
+
+Ele funciona da seguinte forma:
+
+```
+  - condição ? retorno se for verdadeiro : retorno se for falso
+```
+Usando esta simples e poderosa dica, simplificamos nosso código. 
+
+```
+const number = 5; 
+
+// Instead this
+let result;
+if(number > 4) {
+  result = "Bigger";
+} else {
+  result = "Smaller";
+}
+
+// Use this
+const result = number > 4 ? "Bigger" : "Smaller";
+
+```

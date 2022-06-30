@@ -1,7 +1,7 @@
 ---
 title: Console Time
 date: 2022/06/17
-description: Console time shows you how long an operation takes 
+description: Console time mostra quanto tempo leva uma operação 
 tag: javascript
 author: Michael Lourenço
 ---
@@ -11,7 +11,7 @@ import Image from 'next/image'
 
 <Image
   src="/images/SPT-CONSOLE-TIME.png"
-  alt="Image that shows you can now track how long an operation takes "
+  alt="Imagem exemplifica o Console time"
   width={1278}
   height={988}
   priority
@@ -34,3 +34,13 @@ Referências:
 [Mozilla](https://mzl.la/3b9tUQH)
 
 [W3Schools](https://bit.ly/3MUL1TD)
+
+Exemplo:
+
+```
+console.time("mylabel");
+for (let i = 0; i < 100000; i++) {
+  // some code
+}
+console.timeEnd("mylabel");
+```

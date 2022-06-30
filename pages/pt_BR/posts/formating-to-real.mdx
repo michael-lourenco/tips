@@ -1,0 +1,48 @@
+---
+title: Formatando para Real
+date: 2022/06/20
+description: Formatando para Real
+tag: javascript
+author: Michael Lourenço
+---
+
+# Formatando para Real
+import Image from 'next/image'
+
+<Image
+  src="/images/SPT-FORMATING-TO-REAL.png"
+  alt="Image shows how format number to currency Real"
+  width={1278}
+  height={988}
+  priority
+  className="next-image"
+/>
+Já precisou formatar o resultado de uma conta para uma moeda, como por exemplo, o Real?
+
+No JavaScript temos um método chamado toLocaleString() que converte um número para uma string, já tratando a questão do arredondamento e convertendo para a moeda do país que queremos, no nosso caso, o Real, tornando a tarefa do programador muito mais simples.
+
+Está ai mais uma dica simples e poderosa.
+
+Referências:
+
+[Mozilla](https://mzl.la/3xYeGXM)
+
+[Alura](https://bit.ly/3zKlYiU)
+
+
+EXEMPLO:
+
+```
+const value = 20.555;
+
+const valueFormatedToBRL = 
+      value.toLocaleString(
+		'pt-BR', 
+    	{ 
+  	  	style: 'currency', 
+      	currency: 'BRL' 
+    	}
+	);
+
+console.log(valueFormatedToBRL); // R$ 20,56
+```

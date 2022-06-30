@@ -1,7 +1,7 @@
 ---
 title: Zero Division
 date: 2022/06/18
-description: Console time shows you how long an operation takes 
+description: See tricks of zero division
 tag: javascript
 author: Michael Lourenço
 ---
@@ -30,3 +30,17 @@ Referências:
 [Nomar](https://bit.ly/3AfQfqr)
 
 [Curso Alura - JavaScript: tipos, variáveis e funções (Módulo 1 - Aula 5)](https://bit.ly/39u1IaR)
+
+Example:
+
+```
+// first example
+const a = 10
+const b = 0
+console.log(a/b) // Infinity
+
+// second example
+const a = 0
+const b = 0
+console.log(a/b) // NaN
+```

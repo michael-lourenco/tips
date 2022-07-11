@@ -1,0 +1,58 @@
+---
+title: hasOwnProperty
+date: 2022/06/17
+description: Checks if a property exists on an object
+tag: javascript
+author: Michael Lourenço
+---
+
+# Console Time
+import Image from 'next/image'
+
+<Image
+  src="/images/SPT-HAS-OWN-PROPERTY.png"
+  alt="Imagem exemplifica o hasOwnProperty"
+  width={1280}
+  height={988}
+  priority
+  className="next-image"
+/>
+
+Já precisou verificar se uma propriedade existe em um objeto javascript? 
+
+Uma forma simples é utilizar o método **hasOwnProperty()**.
+
+Ele retorna um booleano indicando se o objeto possui a propriedade especificada como uma propriedade definida no próprio objeto em questão (ao contrário de uma propriedade herdada).
+
+**Sintaxe**
+```
+object.hasOwnProperty(propname)   
+```
+
+**Parâmetros**
+
+```
+propname - Uma String ou symbol indicando o nome da propriedade a ser verificada.
+```
+
+No nosso exemplo verificamos se o payload recebido possui a propriedade **"name"** e a propriedade **"hobby"**.
+
+Referências:
+
+[Mozilla](https://mzl.la/3c5CkZS)
+
+Exemplo:
+
+```
+const user = {
+  name: "Isadora",
+  active: true,
+  colors: ["black", "blue"],
+}
+
+console.log(user.hasOwnProperty("name"));   
+// true
+
+console.log(user.hasOwnProperty("hobby"));  
+// false
+```

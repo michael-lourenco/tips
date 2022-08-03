@@ -32,6 +32,7 @@ const PostCard = ({ post }) => (
           alt={post.author.name}
           height="30px"
           width="30px"
+          objectFit = "cover"
           className="align-middle rounded-full"
           src={post.author.photo.url}
         />
